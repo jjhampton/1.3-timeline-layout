@@ -56,7 +56,6 @@ table {
 UNIVERSAL
 ---------------------------*/
 * {
-  border: 1px solid red;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -66,18 +65,17 @@ UNIVERSAL
 /*---------------------------
 BODY
 ---------------------------*/
-body {
-  border: 1px solid red;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+
+header {
+height: 44px;
 }
 
 /*---------------------------
 COLOR CODES:
-gray: #D8D8D8
-light-blue: #81DAF5
-darker-blue: ##2E9AFE
+gray: #C1D0D9
+light-blue: #79C0E7
+darker-blue: #4796C4
+horizontal line: #ADD8F0
 ---------------------------*/
 
 /*---------------------------
@@ -100,17 +98,22 @@ DATE TIME SIDEBAR
 ---------------------------*/
 
 .date-time {
-  width: 147;
+  width: 152px;
   text-align: right;
 }
 
 .date {
-  color: #D8D8D8;
+  color: ##C1D0D9;
+	font-family: Lato, Calibri, Arial, sans-serif;
+	font-size: 14px;
+
 }
 
 .time {
-  color: #81DAF5;
+  color: #79C0E7;
   /* ^ light-blue now, set up rule for alternating chlidren light or darker blue*/
+	font-family: Lato, Calibri, Arial, sans-serif;
+	font-size: 24px;
 }
 
 /*---------------------------
@@ -118,12 +121,9 @@ TIMELINE VERTICAL
 ---------------------------*/
 
 .timeline-vertical {
-  width: 47px;
+  width: 52px;
+	margin-top: 8px;
 }
-
-/*---------------------------
-TRIANGLE
----------------------------*/
 
 
 
@@ -132,6 +132,8 @@ RECIPE
 ---------------------------*/
 .recipe-container {
   width: 690px;
+  color: #FFF;
+	margin-top: 16px;
 }
 
 .recipe-container > div,
@@ -141,9 +143,29 @@ RECIPE
 }
 
 .recipe-triangle {
-  width: 21px;
+  width: 26px;
 }
 
 .recipe-content {
-  width: 660px;
+  width: 698px;
+	padding: 35px 63px;
+  background-color: #79C0E7;
+  /* change for second */
+	border-radius: 1%;
+}
+
+.recipe-content h2 {
+	Lato, Calibri, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.recipe-content hr {
+	color: #8DBFDA;
+}
+
+.recipe-content p {
+	font-family: Lato, Calibri, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
 }
