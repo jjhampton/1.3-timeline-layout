@@ -103,7 +103,7 @@ DATE TIME SIDEBAR
 }
 
 .date {
-  color: ##C1D0D9;
+  color: #C1D0D9;
 	font-family: Lato, Calibri, Arial, sans-serif;
 	font-size: 14px;
 
@@ -155,13 +155,17 @@ RECIPE
 }
 
 .recipe-content h2 {
-	Lato, Calibri, Arial, sans-serif;
+	font-family: Lato, Calibri, Arial, sans-serif;
 	font-size: 28px;
 	font-weight: bold;
 }
 
 .recipe-content hr {
-	color: #8DBFDA;
+	border: none;
+  height: 1px;
+  /* Set the hr color */
+  background-color: #ADD8F0;
+	/*Credit http://stackoverflow.com/a/4151770 */
 }
 
 .recipe-content p {
