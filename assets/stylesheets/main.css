@@ -426,6 +426,93 @@ th {
   padding: 0;
 }
 
+
+/*---------------------------
+UNIVERSAL
+---------------------------*/
 * {
   border: 1px solid red;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*---------------------------
+BODY
+---------------------------*/
+
+/*---------------------------
+COLOR CODES:
+gray: #D8D8D8
+light-blue: #81DAF5
+darker-blue: ##2E9AFE
+---------------------------*/
+
+/*---------------------------
+CONTENT CONTAINER
+---------------------------*/
+.container {
+  width: 928px;
+  margin: 0 auto;
+}
+
+.container > sidebar,
+.container > div,
+.container > section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*---------------------------
+DATE TIME SIDEBAR
+---------------------------*/
+
+.date-time {
+  width: 147;
+  text-align: right;
+}
+
+.date {
+  color: #D8D8D8;
+}
+
+.time {
+  color: #81DAF5;
+  /* ^ light-blue now, set up rule for alternating chlidren light or darker blue*/
+}
+
+/*---------------------------
+TIMELINE VERTICAL
+---------------------------*/
+
+.timeline-vertical {
+  width: 47px;
+}
+
+/*---------------------------
+TRIANGLE
+---------------------------*/
+
+
+
+/*---------------------------
+RECIPE
+---------------------------*/
+.recipe-container {
+  width: 690px;
+}
+
+.recipe-container > div,
+.recipe-container > section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.recipe-triangle {
+  width: 21px;
+}
+
+.recipe-content {
+  width: 660px;
 }
