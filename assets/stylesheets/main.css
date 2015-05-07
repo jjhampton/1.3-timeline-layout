@@ -67,23 +67,21 @@ BODY
 ---------------------------*/
 
 header {
-height: 44px;
+position: relative;
+z-index: 1;
+height: 58px;
 }
 
-/*---------------------------
-COLOR CODES:
-gray: #C1D0D9
-light-blue: #79C0E7
-darker-blue: #4796C4
-horizontal line: #ADD8F0
----------------------------*/
 
 /*---------------------------
 CONTENT CONTAINER
 ---------------------------*/
 .container {
-  width: 928px;
-  margin: 0 auto;
+  width: 958px;
+  margin-top: 0;
+	margin-bottom: 16px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .container > sidebar,
@@ -113,27 +111,75 @@ DATE TIME SIDEBAR
   color: #79C0E7;
   /* ^ light-blue now, set up rule for alternating chlidren light or darker blue*/
 	font-family: Lato, Calibri, Arial, sans-serif;
-	font-size: 24px;
+	font-size: 40px;
+	padding-top: 5px;
 }
 
 /*---------------------------
 TIMELINE VERTICAL
 ---------------------------*/
 
+.timeline-container {
+	position: relative;
+	right: 8px;
+	bottom: 9px;
+	width: 15px;
+	height: 334px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.icon-circle {
+	position: absolute;
+	height: 51px;
+	width: 51px;
+	background-color: #57A6D3;
+	border: 7px solid #B5DCF4;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.icon-circle img {
+	position: relative;
+}
+
+#phone-icon {
+	left: 10px;
+	top: 7px;
+}
+
+#monitor-icon {
+	left: 7px;
+	top: 8px;
+}
+
 .timeline-vertical {
-  width: 52px;
-	margin-top: 8px;
+	position: relative;
+	height: 334px;
+	border-left: 11px solid #B5DCF4;
+	left: 21px;
+	top: 20px;
 }
 
 
+
+/*
+NOT NEEDED
+.timeline-vertical hr {
+	background-color: #B5DCF4;
+	border: none;
+	width: 11px;
+	size: 100%;
+}
+*/
 
 /*---------------------------
 RECIPE
 ---------------------------*/
 .recipe-container {
-  width: 690px;
+  width: 720px;
   color: #FFF;
-	margin-top: 16px;
+
 }
 
 .recipe-container > div,
@@ -142,21 +188,36 @@ RECIPE
   vertical-align: top;
 }
 
-.recipe-triangle {
+.triangle-container {
+	position: relative;
   width: 26px;
 }
 
+.triangle {
+	position: absolute;
+	top: 10px;
+	left: 21px;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-right: 9px solid #79C0E7;
+}
+
 .recipe-content {
-  width: 698px;
-	padding: 35px 63px;
+  width: 690px;
+	padding-top: 42px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 63px;
   background-color: #79C0E7;
   /* change for second */
-	border-radius: 1%;
+	border-radius: 5px;
 }
 
 .recipe-content h2 {
 	font-family: Lato, Calibri, Arial, sans-serif;
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: bold;
 }
 
@@ -172,4 +233,29 @@ RECIPE
 	font-family: Lato, Calibri, Arial, sans-serif;
 	font-size: 19px;
 	font-weight: 300;
+	line-height: 1.3;
+}
+
+/*---------------------------
+COLOR CODES:
+gray: #C1D0D9
+light-blue: #79C0E7
+darker-blue: #4796C4
+horizontal line: #ADD8F0
+icon-circle background: #57A6D3
+icon-circle border: #B5DCF4
+
+COLOR CLASSES:
+---------------------------*/
+
+.second-recipe-color {
+	background-color: #4796C4;
+}
+
+.second-recipe-triangle-color {
+	border-right: 9px solid #4796C4;
+}
+
+.second-recipe-time-color {
+	color: #4796C4;
 }
