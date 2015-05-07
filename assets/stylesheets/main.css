@@ -139,6 +139,12 @@ TIMELINE VERTICAL
 	z-index: 1;
 }
 
+.icon-circle:hover {
+	background-color: red;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+}
+
 .icon-circle img {
 	position: relative;
 }
@@ -244,6 +250,7 @@ darker-blue: #4796C4
 horizontal line: #ADD8F0
 icon-circle background: #57A6D3
 icon-circle border: #B5DCF4
+transition blue hover: #0273AF
 
 COLOR CLASSES:
 ---------------------------*/
